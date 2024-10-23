@@ -1,0 +1,13 @@
+.layout{
+    display: grid;
+}
+
+.layout_section {
+    height: 100px;
+}
+
+.banner-cta {
+    display: flex;
+    gap: 50px;
+}
+
