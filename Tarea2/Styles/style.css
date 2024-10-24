@@ -1,75 +1,71 @@
-.body{
-    background-color: #1a1a2e;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-.logo img{
+.page {
+  background-color: #1a1a2e;
+  color: white;
+  font-family: Arial, sans-serif; }
+  .page .header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: row;
+    background-color: #1a1a2e; }
+  .page .header__logo-image {
     width: 120px;
     height: 120px;
     margin: 20px;
     clip-path: inset(0px 0px 0px 1px);
-    border-radius: 19%;
-}
-
-.menu {
+    border-radius: 19%; }
+  .page .header__navbar {
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 10px;
-    flex-direction: row;
-    background-color: #1a1a2e; 
-}
-
-.nav-link {
-    width: 200px;
-}
-
-.custom-navbar {
     width: 800px;
     justify-content: space-around;
-    background-color: #1a1a2e; 
-}
+    background-color: #1a1a2e; }
+    .page .header__navbar .nav-link {
+      color: white;
+      font-size: 2.25rem;
+      width: 200px; }
+  .page .carousel__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+  .page .carousel__image {
+    width: 100%;
+    height: 550px;
+    object-fit: contain;
+    clip-path: inset(0px 0px 50px 0px); }
+  .page .welcome {
+    display: grid;
+    justify-items: center;
+    padding: 20px; }
+    .page .welcome__title, .page .welcome__text {
+      text-align: center; }
+  .page .pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    background-color: #03031b;
+    padding: 50px; }
+    .page .pillars .pillar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #1a1a2e;
+      padding: 20px; }
+      .page .pillars .pillar__image {
+        width: 100px;
+        height: 100px;
+        margin: 20px; }
+      .page .pillars .pillar__title {
+        font-size: 1.8em;
+        color: #333; }
+      .page .pillars .pillar__text {
+        font-size: 1em;
+        color: #666; }
+  .page .footer {
+    padding: 20px;
+    text-align: right; }
+    .page .footer__text {
+      font-size: 0.9rem; }
 
-.custom-navbar .nav-link {
-    color: white;
-    font-size: 2.25rem;
-}
-
-.carousel-item img {
-    width: 100%;        
-    height: 550px;        
-    object-fit: contain; 
-    clip-path: inset(0px 0px 50px 0px);
-}
-
-.pilares {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 50px 0;
-    padding: 0 50px;
-    background-color: rgb(3, 3, 27);
-}
-
-.pilar {
-    width: 300px;
-    height: 300px;
-    text-align: center;
-}
-
-.pilar img {
-    width: 100px;
-    height: 100px;
-    margin: 20px;
-}
-.pilar h3 {
-    font-size: 1.8em;
-    color: #333;
-}
-
-.pilar p {
-    font-size: 1em;
-    color: #666;
-}
+/*# sourceMappingURL=style.css.map */
